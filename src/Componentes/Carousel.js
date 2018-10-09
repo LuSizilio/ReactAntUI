@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 
 import 'antd/dist/antd.css';
+import { Carousel } from 'antd';
 import { Card, Icon, Avatar } from 'antd';
+import Cartao from "./Cartao";
 const { Meta } = Card;
 
-class Cartao extends Component {
-  renderCard(done,title,subtitle) {
+var teste = class Carousel1 extends Component {
+  renderCard = (done,title,subtitle) =>{
     return (
       <Card
         style={{ width: 300 }}
@@ -26,15 +28,16 @@ class Cartao extends Component {
     );
   }
   render() {
+    for(var x = 1; x < 3; x++){
+    }
+    teste.Item = Cartao;
       return (
-        <Card>
-          {this.renderCard(
-            this.props.done,
-            this.props.title,
-            this.props.subtitle
-          )}
-
-        </Card>
+        <div>
+            <Carousel autoplay>
+            <div>{<teste.Item/>}</div>
+            <div>{<teste.Item done="true"/>}</div>
+            </Carousel>
+          </div>
       );
     }
 }
@@ -110,4 +113,4 @@ class Cartao extends Component {
   }
   */
 
-export default Cartao;
+export default teste;
