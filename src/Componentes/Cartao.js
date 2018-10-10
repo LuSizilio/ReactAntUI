@@ -9,8 +9,9 @@ class Cartao extends Component {
   renderCard = (done,title,subtitle) => {
     return (
       <Card
-        style={{ width: 300 }}
-        cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
+        style={{ width: 300}}
+        
+        cover={<img alt="imagem" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
         actions={[<Icon type="setting" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
       >
         <Meta
@@ -25,16 +26,16 @@ class Cartao extends Component {
       </Card>
     );
   }
-  render() {
+  render()  {
       return (
-        <Card>
+        <div>
           {this.renderCard(
             this.props.done,
             this.props.title,
             this.props.subtitle
           )}
 
-        </Card>
+        </div>
       );
     }
 }

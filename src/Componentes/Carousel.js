@@ -7,7 +7,7 @@ import { Card, Icon, Avatar } from 'antd';
 import Cartao from "./Cartao";
 const { Meta } = Card;
 
-var teste = class Carousel1 extends Component {
+class CarouselCard extends Component {
   renderCard = (done,title,subtitle) =>{
     return (
       <Card
@@ -28,14 +28,10 @@ var teste = class Carousel1 extends Component {
     );
   }
   render() {
-    for(var x = 1; x < 3; x++){
-    }
-    teste.Item = Cartao;
       return (
         <div>
-            <Carousel autoplay>
-            <div>{<teste.Item/>}</div>
-            <div>{<teste.Item done="true"/>}</div>
+            <Carousel autoplay adaptiveHeight="true">
+            {this.props.children}
             </Carousel>
           </div>
       );
@@ -113,4 +109,4 @@ var teste = class Carousel1 extends Component {
   }
   */
 
-export default teste;
+export default CarouselCard;
