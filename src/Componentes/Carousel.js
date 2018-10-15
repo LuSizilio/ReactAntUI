@@ -3,30 +3,8 @@ import '../App.css';
 
 import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
-import { Card, Icon, Avatar } from 'antd';
-import Cartao from "./Cartao";
-const { Meta } = Card;
 
 class CarouselCard extends Component {
-  renderCard = (done,title,subtitle) =>{
-    return (
-      <Card
-        style={{ width: 300 }}
-        cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" />}
-        actions={[<Icon type="setting" />, <Icon type="edit" />, <Icon type="ellipsis" />]}
-      >
-        <Meta
-          avatar={
-            <Avatar>
-                <Icon type={done?"close":"check" } style={done?{color:"#d9534f"}:{color:"#5cb85c"}} theme="outlined" />
-            </Avatar>
-          }
-          title={title}
-          description={subtitle}
-        />
-      </Card>
-    );
-  }
   render() {
       return (
         <div>

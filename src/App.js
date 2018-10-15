@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import {Cartao,Carousel,Noticia} from "./Componentes";
+import {Cartao,Carousel,Noticia, NoticiaCarousel} from "./Componentes";
 class App extends Component {
   render() {
     return (
@@ -20,10 +20,10 @@ class App extends Component {
         </Carousel>
         <Cartao done subtitle="teste" title="teste" color="#d9534f"/>
         <Noticia title="Teste" subtitle="Blablablablabla..."/>
+        <NoticiaCarousel title="Teste" subtitle="Blablablablabla..."/>
         <Carousel>
         <div><Noticia title="Teste" subtitle="Blablablablabla..."/></div>
-        <div><Noticia title="Teste" subtitle="Blablablablabla..."/></div>
-        <div><Noticia title="Teste" subtitle="Blablablablabla..."/></div>
+        <div><NoticiaCarousel title="Teste" subtitle="Blablablablabla..."/></div>
         </Carousel>
       </div>
     );

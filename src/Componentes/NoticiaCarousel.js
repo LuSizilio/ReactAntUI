@@ -11,7 +11,7 @@ class Noticia extends Component {
             <Row>
                 <Col lg={5}></Col>
                 <Col lg={14}>
-                <h1 className="">{title}</h1>
+                <h1 className="carousel-title">{title}</h1>
                 </Col>
                 <Col lg={5}></Col>
             </Row>
@@ -19,11 +19,11 @@ class Noticia extends Component {
             <Row>
                 <Col lg={5}></Col>
                 <Col lg={6}>
-                <img className="" alt="Novidade" src={"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"}/>
+                <img className="carousel-img" alt="Novidade" src={"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"}/>
                 </Col>
                 <Col lg={8}>
-                <p className="">{subtitle}</p>
-                <Button type="primary" className="">Visitar<Icon type="right"></Icon></Button>  
+                <p className="carousel-text">{subtitle}</p>
+                <Button type="primary" className="carousel-btn">Visitar<Icon type="right"></Icon></Button>  
                 </Col>
                 <Col lg={5}></Col>
             </Row>
